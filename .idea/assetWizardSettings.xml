@@ -322,9 +322,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="00ced1" />
-                            <entry key="outputName" value="ic_baseline_person_24" />
-                            <entry key="sourceFile" value="D:\iTEC\iTEC" />
+                            <entry key="outputName" value="ic__13px_recycling_symbol" />
+                            <entry key="sourceFile" value="C:\Users\Sury\Desktop\613px-Recycling_symbol.psd" />
                           </map>
                         </option>
                       </PersistentState>
