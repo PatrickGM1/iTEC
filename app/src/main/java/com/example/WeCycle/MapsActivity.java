@@ -1,11 +1,10 @@
-package com.example.smart_recycle;
+package com.example.WeCycle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.example.smart_recycle.databinding.ActivityMapsBinding;
+import com.example.WeCycle.databinding.ActivityMapsBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -24,10 +23,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
     private final int ZOOM_LEVEL = 18;
@@ -123,7 +118,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
         // Add a marker in Sydney and move the camera
-        LatLng startingPoint = new LatLng(45.7568755, 21.2286756);
+        LatLng startingPoint = new LatLng(45.7409984, 21.2398767);
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(startingPoint, ZOOM_LEVEL), ANIMATION_DURATION_MILISECONDS, null);
     }

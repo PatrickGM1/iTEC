@@ -1,4 +1,4 @@
-package com.example.smart_recycle;
+package com.example.WeCycle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +15,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.abt.FirebaseABTesting;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.database.FirebaseDatabase;
-
-import org.w3c.dom.Text;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
 

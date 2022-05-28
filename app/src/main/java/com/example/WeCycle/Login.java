@@ -1,4 +1,4 @@
-package com.example.smart_recycle;
+package com.example.WeCycle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

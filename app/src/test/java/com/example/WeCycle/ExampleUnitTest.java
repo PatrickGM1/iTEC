@@ -1,4 +1,4 @@
-package com.example.smart_recycle;
+package com.example.WeCycle;
 
 import org.junit.Test;
 
