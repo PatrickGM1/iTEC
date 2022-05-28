@@ -109,9 +109,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 mMap.clear();
-                for(DataSnapshot garbageSnapshot: snapshot.getChildren()){
+                for (DataSnapshot garbageSnapshot : snapshot.getChildren()) {
                     GarbageMarker gm = garbageSnapshot.getValue(GarbageMarker.class);
                     LatLng gmpos = new LatLng(gm.Longitude, gm.Latitude);
+                    //LatLng gmpos = new LatLng(45.740863,21.238986);
                     mMap.addMarker(new MarkerOptions().position(gmpos).title(gm.Name));
                 }
             }
@@ -124,8 +125,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng startingPoint = new LatLng(45.7568755, 21.2286756);
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(startingPoint, ZOOM_LEVEL),ANIMATION_DURATION_MILISECONDS, null);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(startingPoint, ZOOM_LEVEL), ANIMATION_DURATION_MILISECONDS, null);
     }
-    //lol
 
 }
