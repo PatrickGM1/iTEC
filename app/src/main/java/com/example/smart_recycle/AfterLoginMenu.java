@@ -31,7 +31,6 @@ public class AfterLoginMenu extends AppCompatActivity {
         userID=user.getUid();
         logout=(Button) findViewById(R.id.Logout);
         final TextView showname = (TextView) findViewById(R.id.welcome);
-        final TextView showemail = (TextView) findViewById(R.id.showemail);
         final TextView showgarbage = (TextView) findViewById(R.id.garbagepointcounter);
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -41,8 +40,7 @@ public class AfterLoginMenu extends AppCompatActivity {
                     String fullname  = userprofile.name;
                     String email = userprofile.email;
                     int garbagecount = userprofile.garbagePoints;
-                    showname.setText("Welcome, "+fullname+" !");
-                    showemail.setText("Your email is: \n"+ email);
+                    showname.setText("Your stats "+fullname+":");
                     showgarbage.setText("You have "+garbagecount+" recycle points");
 
                 }

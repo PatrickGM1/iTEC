@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     String fullname  = userprofile.name;
                     String email = userprofile.email;
                     int garbagecount = userprofile.garbagePoints;
-                    showname.setText("Welcome, "+fullname);
+                    showname.setText("Welcome "+fullname);
                 }
             }
             @Override

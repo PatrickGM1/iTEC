@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Coupons extends AppCompatActivity {
-    Button succes, returnbtn, coupon;
+    Button succes, returnbtn, coupon, cupon1;
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
@@ -31,7 +31,8 @@ public class Coupons extends AppCompatActivity {
         setContentView(R.layout.activity_coupons);
         succes=(Button)findViewById(R.id.bilet);
         returnbtn=(Button)findViewById(R.id.returnbutton2);
-        coupon=(Button)findViewById(R.id.Cupon);
+        coupon=(Button)findViewById(R.id.cupon1);
+        cupon1=(Button)findViewById(R.id.cupon);
         user= FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID=user.getUid();
@@ -43,7 +44,7 @@ public class Coupons extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         currentGarbagePoints = snapshot.getValue(int.class);
-                        if(currentGarbagePoints>1000) {
+                        if(currentGarbagePoints>=1000) {
                             mDatabase.child("Users").child(userID).child("garbagePoints").setValue(currentGarbagePoints - ticketPrice);
                             Toast.makeText(Coupons.this, "Ticket successfully bought", Toast.LENGTH_LONG).show();
                         }else{
@@ -59,6 +60,28 @@ public class Coupons extends AppCompatActivity {
             }
         });
 
+        cupon1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDatabase.child("Users").child(userID).child("garbagePoints").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        currentGarbagePoints = snapshot.getValue(int.class);
+                        if(currentGarbagePoints>=10000) {
+                            mDatabase.child("Users").child(userID).child("garbagePoints").setValue(currentGarbagePoints - 10000);
+                            Toast.makeText(Coupons.this, "Coupon successfully bought", Toast.LENGTH_LONG).show();
+                        }else{
+                            Toast.makeText(Coupons.this, "Insufficient points", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+            }
+        });
         coupon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,8 +89,8 @@ public class Coupons extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         currentGarbagePoints = snapshot.getValue(int.class);
-                        if(currentGarbagePoints>10000) {
-                            mDatabase.child("Users").child(userID).child("garbagePoints").setValue(currentGarbagePoints - couponprice);
+                        if(currentGarbagePoints>=5000) {
+                            mDatabase.child("Users").child(userID).child("garbagePoints").setValue(currentGarbagePoints - 5000);
                             Toast.makeText(Coupons.this, "Coupon successfully bought", Toast.LENGTH_LONG).show();
                         }else{
                             Toast.makeText(Coupons.this, "Insufficient points", Toast.LENGTH_LONG).show();

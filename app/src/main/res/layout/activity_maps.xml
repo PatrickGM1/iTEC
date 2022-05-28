@@ -17,7 +17,7 @@
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_baseline_shopping_bag_24"
         android:drawablePadding="-15dip"
-        android:fontFamily="@font/audiowide"
+        android:fontFamily="@font/days_one"
         android:text="shop"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -38,7 +38,7 @@
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_baseline_center_focus_weak_24"
         android:drawablePadding="-5dip"
-        android:fontFamily="@font/audiowode2"
+        android:fontFamily="@font/days_one"
         android:text="QR        Scanner"
         android:textColor="#000000"
         android:textSize="12dp"
@@ -86,15 +86,16 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="117dp"
-            android:layout_height="46dp"
-            android:fontFamily="@font/audiowide"
+            android:layout_width="184dp"
+            android:layout_height="41dp"
+            android:fontFamily="@font/days_one"
             android:scrollbarSize="8dp"
             android:text="TextView"
             android:textColor="#000000"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.542" />
@@ -109,24 +110,16 @@
             android:background="@drawable/buttons2"
             android:drawableLeft="@drawable/ic_baseline_person_24"
             android:drawablePadding="-10dip"
-            android:fontFamily="@font/audiowode2"
-            android:text="Profile"
+            android:fontFamily="@font/days_one"
+            android:text="Stats"
             android:textColor="#000000"
             android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintHorizontal_bias="0.746"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="77dp"
-            android:layout_height="75dp"
-            app:srcCompat="@drawable/recycling"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="3dp" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
