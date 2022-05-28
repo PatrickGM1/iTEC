@@ -94,7 +94,7 @@
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.409"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.542" />
@@ -115,18 +115,18 @@
             android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintHorizontal_bias="0.814"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="97dp"
-            android:layout_height="82dp"
+            android:id="@+id/imageView8"
+            android:layout_width="77dp"
+            android:layout_height="75dp"
             app:srcCompat="@drawable/recycling"
-            tools:layout_editor_absoluteX="2dp"
-            tools:layout_editor_absoluteY="-1dp" />
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="3dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
