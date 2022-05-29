@@ -88,7 +88,7 @@
       android:fontFamily="@font/audiowide"
       android:gravity="center"
       android:text="Shop"
-      android:textColor="#00CED1"
+      android:textColor="#139f4a"
       app:autoSizeTextType="uniform"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"

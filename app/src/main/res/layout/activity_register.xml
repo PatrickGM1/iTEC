@@ -88,7 +88,7 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/days_one"
         android:text="Register"
-        android:textColor="#00CED1"
+        android:textColor="#139f4a"
         app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

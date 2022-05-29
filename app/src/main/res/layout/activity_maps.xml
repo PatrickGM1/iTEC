@@ -80,7 +80,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="410dp"
         android:layout_height="81dp"
-        android:background="#00CED1"
+        android:background="#139f4a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

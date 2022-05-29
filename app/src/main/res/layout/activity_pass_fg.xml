@@ -13,7 +13,7 @@
         android:fontFamily="@font/days_one"
         android:gravity="center"
         android:text="Insert your email"
-        android:textColor="#00CED1"
+        android:textColor="#139f4a"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
