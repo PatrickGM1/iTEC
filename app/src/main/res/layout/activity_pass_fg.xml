@@ -38,9 +38,9 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00CED1"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:background="@drawable/buttons"
         android:fontFamily="@font/days_one"
         android:text="Send password reset email"
         app:layout_constraintBottom_toBottomOf="parent"
