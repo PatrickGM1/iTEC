@@ -118,7 +118,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
         // Add a marker in Sydney and move the camera
-        LatLng startingPoint = new LatLng(45.7409984, 21.2398767);
+        LatLng startingPoint = new LatLng(44.172257, 28.662787);
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(startingPoint, ZOOM_LEVEL), ANIMATION_DURATION_MILISECONDS, null);
     }

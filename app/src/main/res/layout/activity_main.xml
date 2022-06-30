@@ -16,7 +16,7 @@
         android:layout_marginBottom="86dp"
         android:fontFamily="@font/days_one"
         android:gravity="center"
-        android:text="Welcome to WeCycle"
+        android:text="Welcome to SmartRecycling"
         android:textColor="#139f4a"
         android:textSize="36dp"
         android:translationZ="2dp"
